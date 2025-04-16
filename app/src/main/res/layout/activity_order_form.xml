@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Campo para o nome -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName"/>
+
+    <!-- Opções de pizza -->
+    <RadioGroup
+        android:id="@+id/radioGroupPizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioPizzaCalabresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza Calabresa" />
+
+        <RadioButton
+            android:id="@+id/radioPizzaMussarela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza Mussarela" />
+    </RadioGroup>
+
+    <!-- Botão para confirmar o pedido -->
+    <Button
+        android:id="@+id/btnConfirmarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Pedido"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
